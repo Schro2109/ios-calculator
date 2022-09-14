@@ -8,12 +8,12 @@
 import Foundation
 
 enum Operator: Character, CalculateItem, CaseIterable {
-    case add
-    case subtract
-    case divide
-    case multiply
+    case add = "+"
+    case subtract = "-"
+    case divide = "/"
+    case multiply = "*"
     
-    var calculate:(_ lhs: Double, _ rhs: Double) -> Double {
+    func calculate(lhs: Double, rhs: Double) -> Double {
         switch self {
         case .add:
             return lhs + rhs
