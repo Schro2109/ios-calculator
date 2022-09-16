@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Formula: ExpressionParser {
+struct Formula {
     var operands: CalculatorItemQueue<Double>
     var operators: CalculatorItemQueue<Operator>
     

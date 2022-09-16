@@ -7,10 +7,6 @@
 
 import Foundation
 
-extension Double {
-    
-}
-
-protocol CalculateItem: Operator {
+protocol CalculateItem{
     
 }
